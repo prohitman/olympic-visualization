@@ -59,7 +59,7 @@ function App() {
           .sort((a, b) => a.Year - b.Year);
       });
 
-      setCountries(Object.keys(formattedData));
+      setCountries(Object.keys(formattedData).sort((a, b) => a.localeCompare(b)));
       setData(formattedData);
     };
 
